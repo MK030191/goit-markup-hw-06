@@ -426,9 +426,23 @@
                       </li>
                   </ul>
             </div>
+            <div class="footer-subscribe-block">
+              <p class="subscribe-block-text">Subscribe</p>
+              <form class="footer-subscribe-form">
+                <label class="footer-subscribe-form-label">
+                  <input class="footer-subscribe-form-input" type="email" name="user-email" placeholder="E-mail"/>
+                </label>
+                <button type="submit" class="footer-subscribe-btn">
+                  Subscribe
+                  <svg class="footer-subscribe-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
         </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-window-close-btn" data-modal-close>
           <svg class="modal-window-close-btn-icon" width="8" height="8" aria-label="close button icon">
@@ -436,28 +450,45 @@
           </svg>
         </button>
         <form class="order-form">
-          <p class="order-form-description"></p>
+          <p class="order-form-description">Leave your contacts and we will call you back</p>
           <label class="order-form-field">
-            Name 
-            <input type="text" class="order-form-input">
+            <p class="order-form-field-description">Name <sup>*</sup></p>
+            <span class="order-form-input-wrapper">
+              <input class="order-form-input" type="text" name="user_fullname" required pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+" title="Oleksii"/>
+              <svg class="order-form-field-icon">
+                <use href="./images/icons.svg#icon-user" width="18" height="18" aria-label="user avatar icon"></use>
+              </svg>
+            </span>
           </label>
           <label class="order-form-field">
-            Phone 
-            <input type="text" class="order-form-input">
+            <p class="order-form-field-description">Phone <sup>*</sup></p>
+            <span class="order-form-input-wrapper">
+            <input class="order-form-input" type="tel" name="user_phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx"/>
+            <svg class="order-form-field-icon">
+              <use href="./images/icons.svg#icon-phone" width="18" height="24" aria-label="phone icon"></use>
+            </svg>
+          </span>
           </label>
           <label class="order-form-field">
-            Email 
-            <input type="text" class="order-form-input">
+            <p class="order-form-field-description">Email <sup>*</sup></p>
+            <span class="order-form-input-wrapper">
+            <input class="order-form-input" type="email" name="user_email" required/>
+            <svg class="order-form-field-icon">
+              <use href="./images/icons.svg#icon-mail" width="18" height="24" aria-label="email icon"></use>
+            </svg>
           </label>
           <label class="order-form-field">
-            Comment
-            <textarea name="" class="order-form-message"></textarea>
+            <p class="order-form-field-description">Comment <sup>*</sup></p>
+            <textarea class="order-form-message" name="user_comment" placeholder="Text input"></textarea>
           </label>
-          <label class="order-form-field">
-            <input type="text" class="order-form-checkbox-policy">
-            I accept the terms and conditions of the <a href="">Privacy Policy</a>
+          <label class="order-form-field order-form-field-policy">
+            <input class="order-form-checkbox-policy" type="checkbox" name="user_policy" required/>
+            <svg class="order-form-own-checkbox" width="16" height="16" aria-label="checkbox">
+              <use class="order-form-own-checkbox-icon" href="./images/icons.svg#icon-checkmark"></use>
+            </svg>
+            I accept the terms and conditions of the&nbsp;<a class="link">Privacy Policy</a>
           </label>
-          <button type="submit" class="order-form-submit-btn"></button>
+          <button class="order-form-submit-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
