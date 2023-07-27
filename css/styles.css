@@ -700,10 +700,10 @@ img {
     transition: background-color var(--transition-dur-and-func);
   }
 
-  .footer-subscribe-icon {
+.footer-subscribe-icon {
     margin-left: 16px;
     fill: var(--primary-white-color);
-  }
+}
 
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
@@ -785,9 +785,17 @@ img {
     margin-bottom: 16px;
   }
 
+  .order-form-wrapper {
+    margin-bottom: 16px
+  }
+
   .order-form-field {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--customers-icons-color)
   }
 
   .order-form-field-description {
@@ -800,10 +808,10 @@ img {
     margin-bottom: 4px;
   }
 
-  .order-form-input-wrapper {
+.order-form-input-wrapper {
     position: relative;
     display: block;
-  }
+}
   
 .order-form-input {
     width: 100%;
@@ -846,12 +854,12 @@ img {
     width: 100%;
     height: 120px;
     resize: none;
-    font-size: 18px;
+    font-size: 12px; 
     font-style: normal;
     font-weight: 400;
     line-height: 1.17;
-    letter-spacing: 0.48px;
-    color: var(--title-text-color);
+    letter-spacing: 0.04em; 
+    color: rgba(46, 47, 66, 0.4); 
     padding: 8px 16px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
@@ -873,6 +881,10 @@ img {
     border-color: var(--secondary-accent-color);
 }
 
+.order-form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+
 .order-form-own-checkbox {
     padding: 2px;
     border-radius: 2px;
@@ -882,8 +894,27 @@ img {
 }
 
 .order-form-own-checkbox-icon {
-    display: none;
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color var(--transition-dur-and-func), border var(--transition-dur-and-func), fill var(--transition-dur-and-func);
     fill: var(--light-mode-backgrounds-color);
+    align-items: center;
+    justify-content: center; 
+    fill: transparent; 
+    
+}
+
+.order-form-field-policy {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+    color: var(--customers-icons-color);
 }
 
 .order-form-checkbox-policy {
@@ -898,16 +929,6 @@ img {
 
 .order-form-checkbox-policy:checked + .order-form-own-checkbox use {
     display: block;
-}
-
-.order-form-field-policy {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.48px;
-    color: var(--customers-icons-color);
 }
 
 .order-form-field-policy a {
