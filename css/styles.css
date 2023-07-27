@@ -893,16 +893,16 @@ img {
 }
 
 .order-form-own-checkbox-icon {
-    display: inline-flex; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 16px;
     height: 16px;
+    margin-right: 8px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color var(--transition-dur-and-func), border var(--transition-dur-and-func), fill var(--transition-dur-and-func);
     fill: var(--light-mode-backgrounds-color);
-    align-items: center;
-    justify-content: center; 
-    margin-right: 8px;
     fill: transparent; 
 }
 
