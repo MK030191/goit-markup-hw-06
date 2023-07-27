@@ -782,11 +782,11 @@ img {
     letter-spacing: 0.32px;
     text-align: center;
     color: var(--title-text-color);
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 
 .order-form-wrapper {
-    margin-bottom: 8px;
+    margin-bottom: 16px
 }
 
 .order-form-field {
