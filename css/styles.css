@@ -782,23 +782,23 @@ img {
     letter-spacing: 0.32px;
     text-align: center;
     color: var(--title-text-color);
-    margin-bottom: 16px;
+    padding-bottom: 16px;
   }
 
-  .order-form-wrapper {
-    margin-bottom: 16px
-  }
+.order-form-wrapper {
+    margin-bottom: 8px;
+}
 
-  .order-form-field {
+.order-form-field {
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--customers-icons-color)
-  }
+}
 
-  .order-form-field-description {
+.order-form-field-description {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -806,7 +806,7 @@ img {
     letter-spacing: 0.48px;
     color: var(--customers-icons-color);
     margin-bottom: 4px;
-  }
+}
 
 .order-form-input-wrapper {
     position: relative;
@@ -840,9 +840,9 @@ img {
 }
 
 .order-form-field-icon {
+    position: absolute;
     width: 18px;
     height: 24px;
-    position: absolute;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
@@ -903,8 +903,8 @@ img {
     fill: var(--light-mode-backgrounds-color);
     align-items: center;
     justify-content: center; 
+    margin-right: 8px;
     fill: transparent; 
-    
 }
 
 .order-form-field-policy {
@@ -918,13 +918,13 @@ img {
 }
 
 .order-form-checkbox-policy {
-    appearance: none;
     position: absolute;
 }
 
-.order-form-checkbox-policy:checked + .order-form-own-checkbox {
+.checkbox:checked + .order-form-field-policy > .order-form-own-checkbox-icon {
     background-color: var(--accent-color);
-    order: 1px solid rgba(46, 47, 66, 0.40);
+    border: none;
+    fill: var(--light-mode-backgrounds-color)
 }
 
 .order-form-checkbox-policy:checked + .order-form-own-checkbox use {
