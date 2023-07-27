@@ -840,8 +840,8 @@ img {
 
 .order-form-field-icon {
     position: absolute;
-    width: 18px;
-    height: 24px;
+    max-width: 18px;
+    max-height: 24px;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
