@@ -786,7 +786,11 @@ img {
   }
 
 .order-form-wrapper {
-    margin-bottom: 16px
+    margin-bottom: 8px;
+}
+
+.order-form-comment-wrapper {
+    margin-bottom: 16px;
 }
 
 .order-form-field {
@@ -894,7 +898,7 @@ img {
 }
 
 .order-form-own-checkbox-icon {
-    display: inline-flex;
+    display: inline-flex; 
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
