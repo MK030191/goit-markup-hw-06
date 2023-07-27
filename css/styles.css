@@ -573,18 +573,14 @@ img {
 
 .footer-information {
     display: flex;
-    align-items: baseline
-}
-
-.footer-message-part {
-    margin-right: 120px;
+    align-items: baseline;
+    min-width: 264px;
 }
 
 .logo-footer-information {
     display: flex;
     margin-bottom: 16px; 
 }
-
 
 .footer-message {
     max-width: 264px;
@@ -646,7 +642,6 @@ img {
 
 .footer-subscribe-form {
     display: flex;
-    flex-direction: column;
     gap: 24px;
 }
 
